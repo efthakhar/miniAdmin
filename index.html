@@ -1,154 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>liteAdmin</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet">
+    <title>MiniAdmin</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="dashboard-core.css">
 </head>
+
 <body>
     <div class="admin-page">
+
         <div class="admin-sidebar">
+
             <div class="admin-sibar__logo">
-                <h2 class="h--1">Lite Admin</h2>
-                <span class="close-sidebar">
-                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" 
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                            x="0px" y="0px"width="92.132px" height="92.132px"  viewBox="0 0 92.132 92.132" style="enable-background:new 0 0 92.132 92.132;" xml:space="preserve">
-                            <g><g> <path d="M2.141,89.13c1.425,1.429,3.299,2.142,5.167,2.142c1.869,0,3.742-0.713,5.167-2.142l33.591-33.592L79.657,89.13
-                                c1.426,1.429,3.299,2.142,5.167,2.142c1.867,0,3.74-0.713,5.167-2.142c2.854-2.854,2.854-7.48,0-10.334L56.398,45.205
-                                l31.869-31.869c2.855-2.853,2.855-7.481,0-10.334c-2.853-2.855-7.479-2.855-10.334,0L46.065,34.87L14.198,3.001
-                                c-2.854-2.855-7.481-2.855-10.333,0c-2.855,2.853-2.855,7.481,0,10.334l31.868,31.869L2.143,78.795
-                                C-0.714,81.648-0.714,86.274,2.141,89.13z"/></g></g><g></g><g></g><g></g><g>
-                                    </g><g></g><g></g><g></g><g>
-                                    </g><g></g><g></g><g></g>
-                                    <g></g><g></g>
-                                    <g></g><g></g>
+                <h2 class="h--1 logo-text">Mini Admin</h2>
+                <span class="hide-small-device-sidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M21 17.9996V19.9996H3V17.9996H21ZM6.94975 3.5498V13.4493L2 8.49955L6.94975 3.5498ZM21 10.9996V12.9996H12V10.9996H21ZM21 3.99955V5.99955H12V3.99955H21Z">
+                        </path>
                     </svg>
                 </span>
             </div>
+
             <div class="admin-sidebar__links">
-                
-                <div class="admin-sidebar__link_item active">
-                    <li class="sidebar__link active has_sublink">
-                        Dashboard
+
+                <div class="admin-sidebar__link_item">
+
+                    <li class="sidebar__link active">
+                        <span class="sidebar__link_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M3.78307 2.82598L12 1L20.2169 2.82598C20.6745 2.92766 21 3.33347 21 3.80217V13.7889C21 15.795 19.9974 17.6684 18.3282 18.7812L12 23L5.6718 18.7812C4.00261 17.6684 3 15.795 3 13.7889V3.80217C3 3.33347 3.32553 2.92766 3.78307 2.82598ZM5 4.60434V13.7889C5 15.1263 5.6684 16.3752 6.7812 17.1171L12 20.5963L17.2188 17.1171C18.3316 16.3752 19 15.1263 19 13.7889V4.60434L12 3.04879L5 4.60434ZM13 10H16L11 17V12H8L13 5V10Z">
+                                </path>
+                            </svg>
+                        </span>
+                        <span>Welcome </span>
                     </li>
-                    <div class="sidebar__link_sublinks">
-                        <a href="#" class="sidebar__sublink ">
-                            sublink 1
-                        </a>
-                        <a href="" class="sidebar__sublink">
-                            sublink 1
-                        </a>
-                        <a href="" class="sidebar__sublink">
-                            sublink 1
-                        </a>
-                    </div>
-                </div>
-                <div class="admin-sidebar__link_item ">
-                    <li class="sidebar__link  has_sublink">
-                        Dashboard
-                    </li>
-                    <div class="sidebar__link_sublinks">
-                        <a href="#" class="sidebar__sublink ">
-                            sublink 1
-                        </a>
-                        <a href="" class="sidebar__sublink">
-                            sublink 1
-                        </a>
-                        <a href="" class="sidebar__sublink">
-                            sublink 1
-                        </a>
-                    </div>
+
                 </div>
                 <div class="admin-sidebar__link_item">
-                    <li class="sidebar__link has_sublink">
-                        Dashboard
+
+                    <li class="sidebar__link">
+                        <span class="sidebar__link_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 21.0001H5C4.44772 21.0001 4 20.5524 4 20.0001V11.0001L1 11.0001L11.3273 1.61162C11.7087 1.26488 12.2913 1.26488 12.6727 1.61162L23 11.0001L20 11.0001V20.0001C20 20.5524 19.5523 21.0001 19 21.0001ZM6 19.0001H18V9.15757L12 3.70302L6 9.15757V19.0001ZM9 10.0001H15V16.0001H9V10.0001ZM11 12.0001V14.0001H13V12.0001H11Z">
+                                </path>
+                            </svg>
+                        </span>
+                        <span>Dashboard</span>
                     </li>
                     <div class="sidebar__link_sublinks">
-                        <a href="#" class="sidebar__sublink ">
-                            sublink 1
+                        <a href="#" class="sidebar__sublink">
+                            Dashboard One
                         </a>
                         <a href="" class="sidebar__sublink">
-                            sublink 1
+                            Admin Style Two
                         </a>
                         <a href="" class="sidebar__sublink">
-                            sublink 1
+                            Another Sublink
                         </a>
                     </div>
                 </div>
-                <div class="admin-sidebar__link_item active">
-                    <li class="sidebar__link active has_sublink">
-                        Dashboard
-                    </li>
-                    <div class="sidebar__link_sublinks">
-                        <a href="#" class="sidebar__sublink ">
-                            sublink 1
-                        </a>
-                        <a href="" class="sidebar__sublink">
-                            sublink 1
-                        </a>
-                        <a href="" class="sidebar__sublink">
-                            sublink 1
-                        </a>
-                    </div>
-                </div>
-                <div class="admin-sidebar__link_item ">
-                    <li class="sidebar__link  has_sublink">
-                        Dashboard
-                    </li>
-                    <div class="sidebar__link_sublinks">
-                        <a href="#" class="sidebar__sublink ">
-                            sublink 1
-                        </a>
-                        <a href="" class="sidebar__sublink">
-                            sublink 1
-                        </a>
-                        <a href="" class="sidebar__sublink">
-                            sublink 1
-                        </a>
-                    </div>
-                </div>
-                <div class="admin-sidebar__link_item">
-                    <li class="sidebar__link has_sublink">
-                        Dashboard
-                    </li>
-                    <div class="sidebar__link_sublinks">
-                        <a href="#" class="sidebar__sublink ">
-                            sublink 1
-                        </a>
-                        <a href="" class="sidebar__sublink">
-                            sublink 1
-                        </a>
-                        <a href="" class="sidebar__sublink">
-                            sublink 1
-                        </a>
-                    </div>
-                </div>
+
             </div>
-           
         </div>
+
         <div class="admin-main">
             <div class="admin-header">
                 <div class="menu-icon">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" 
-                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 377 377" xml:space="preserve">
-                        <g><circle cx="15" cy="88.5" r="15"></circle><rect x="75" y="73.5" width="302" height="30">
-                        </rect><circle cx="15" cy="288.5" r="15"></circle><rect x="75" y="273.5" width="302" height="30">
-                        </rect><circle cx="15" cy="188.5" r="15"></circle><rect x="75" y="173.5" width="302" height="30"></rect></g><g></g><g></g><g></g><g></g><g></g><g>
-                        </g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M3 4H21V6H3V4ZM9 11H21V13H9V11ZM3 18H21V20H3V18Z"></path>
                     </svg>
-                </div>     
+                </div>
             </div>
             <div class="admin-content">
-                <h1>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quidem dicta vero nulla provident, reiciendis dolores totam reprehenderit suscipit impedit exercitationem praesentium necessitatibus debitis unde, tempore sunt omnis a illum perspiciatis sequi. Minima id error velit dicta placeat minus sunt voluptate pariatur, repudiandae a impedit odit molestias perspiciatis iure. Corrupti saepe iure recusandae esse, explicabo aliquid cum vero quidem asperiores minus magni aperiam ea amet iste quo, ut error unde quam deserunt facere perspiciatis fugit laborum! Dolores dolor aut voluptas, recusandae, suscipit a cum voluptatibus consequuntur natus ipsum alias nostrum hic ducimus ipsa similique atque cumque aspernatur error repellat illum. Repudiandae sint exercitationem ratione. Dignissimos explicabo, vel iure doloribus facilis perspiciatis! Nobis nulla quo labore voluptatum ratione delectus architecto porro, necessitatibus at pariatur, aspernatur magnam saepe. Repudiandae magnam laborum laudantium debitis eius a, tempore quisquam vero quas mollitia incidunt sit harum commodi beatae! Enim porro fuga molestias a rerum et veniam adipisci voluptatem nam atque. Eveniet rem placeat dicta assumenda commodi, porro amet eius recusandae distinctio rerum culpa vitae beatae nostrum magni ipsum ab blanditiis. Nisi, eum fugiat veritatis totam voluptates repellat ab eaque assumenda ducimus voluptatibus quidem distinctio perferendis cumque sit illum quasi provident itaque temporibus, quibusdam dignissimos ex iste autem est. Ipsam neque facere necessitatibus nisi ducimus, vero cum ut saepe totam vitae nostrum aut voluptatem aliquid dignissimos error assumenda a reiciendis, quidem culpa maiores. Neque, nobis odit mollitia in soluta distinctio ipsam ut qui, id, culpa sint maxime. Debitis animi officia reprehenderit ipsam exercitationem cum non excepturi, quis maxime adipisci dolores deleniti officiis temporibus, doloribus ipsum cumque, provident consectetur similique. Itaque, minima minus vel reiciendis obcaecati eligendi id fuga perferendis cupiditate dolorem aspernatur modi delectus corrupti aut vero cumque recusandae voluptatem quidem, exercitationem sit mollitia nisi asperiores amet. Fugit sit nostrum placeat dolorem itaque amet eaque alias adipisci praesentium, voluptatem suscipit minus, minima distinctio enim modi architecto ad. Optio odit ea ratione odio quod fugiat! Fuga, consequatur illo pariatur distinctio id numquam unde nihil quisquam repellendus reiciendis voluptatibus autem alias commodi perspiciatis in cumque voluptas saepe exercitationem ab modi dolor consectetur dolorem culpa! Optio, quasi. Aspernatur autem, omnis error dolore quo cum ea adipisci a ab eligendi dicta amet beatae saepe, perferendis in ullam quaerat, odit facilis ad dolores sapiente. Harum provident, quis iure quod voluptatibus officia veritatis, exercitationem ratione tenetur adipisci nam. Ratione consequuntur commodi eaque vero, magni accusantium, laboriosam eos necessitatibus at odit distinctio perferendis. Molestiae nulla corrupti voluptatem nostrum nemo rerum veritatis. Rerum enim deleniti eius nisi architecto sint non cupiditate quia. Consequuntur dolores commodi tempore modi nam quibusdam! Asperiores optio pariatur fugit quam fugiat, soluta veritatis cum odio nesciunt quibusdam modi laborum amet ad, numquam blanditiis voluptas sed doloremque maxime, aliquam quasi? Est, ex! Accusamus illum ratione ipsa eum illo rerum, perferendis voluptate impedit molestiae, quis adipisci facere placeat eaque reprehenderit quas eius fugit dignissimos a veritatis. Nostrum praesentium aliquid quidem tenetur vitae maxime esse, vel, sequi minus repellendus rerum eos! Blanditiis dolorem delectus repellendus soluta dolor temporibus numquam quas sit, eaque minus adipisci non alias voluptatum tenetur animi praesentium nemo exercitationem debitis doloribus. Consequatur quod, accusantium at cumque nostrum cum suscipit. Molestiae, cumque soluta consectetur voluptas fugiat doloribus natus, laudantium voluptate facere hic nesciunt excepturi! Doloremque nam harum nulla explicabo, tenetur repellat quas exercitationem laudantium minima maxime, rem facere mollitia suscipit! Cupiditate placeat ipsum quod expedita, qui nihil numquam minus quam voluptate debitis pariatur quo hic. Earum quas sapiente reiciendis deleniti, dicta ullam perspiciatis tempora architecto consequuntur eligendi aut nesciunt nemo rem enim iusto sit, error assumenda adipisci a. Ad dolorum reprehenderit expedita et adipisci voluptate, culpa rem assumenda nisi minima aspernatur sed quod, odit accusamus nesciunt? Autem explicabo illum iste dolores aliquid assumenda porro consequatur, sapiente pariatur laudantium amet alias? Repellendus blanditiis incidunt voluptatum facere provident, officia alias fugit eaque tenetur et praesentium quidem est magnam odit maiores corrupti dolore nesciunt nihil. Esse tenetur tempore autem numquam quo aliquam corrupti alias qui nisi hic, ipsum nam fuga nulla debitis eius omnis excepturi molestias. Debitis, aspernatur. Sequi ipsa commodi esse reiciendis, nesciunt dolorum? Provident exercitationem quaerat asperiores quidem esse voluptate ex debitis similique fugit, veniam porro pariatur ipsam itaque numquam expedita nam odio et quisquam distinctio assumenda quae accusantium architecto commodi! Temporibus, eum facere omnis suscipit aspernatur laudantium? Sapiente facere temporibus facilis nostrum, nam illo sed rem, a dolor magnam expedita pariatur nulla necessitatibus placeat blanditiis voluptatum quasi laboriosam dolore voluptatem voluptatibus ut? Quis similique possimus debitis, qui unde vero? Nulla consequatur nesciunt harum possimus magni magnam sed impedit tenetur provident dolor totam eligendi in voluptate molestiae numquam, illo eius nisi! Provident voluptates in distinctio, iure odio, quo magnam sunt deleniti, modi a porro error excepturi. Quia est impedit possimus quod minus magnam, sint nisi sequi fugiat sunt odit praesentium aut modi nesciunt cum quisquam doloribus quaerat tempora placeat ipsum quidem earum. Repellat, aliquid veritatis? Minima aspernatur ullam, est quia vero similique dicta error, qui quaerat atque commodi velit consequuntur? Quibusdam voluptas veritatis at modi, quis illum quas? In veritatis animi itaque earum omnis deleniti recusandae voluptatum, impedit distinctio, vero dolor! Tenetur quis dolorum, amet error libero repellendus similique officia nam deleniti, rerum assumenda eum corporis quam eaque explicabo? Aperiam, obcaecati provident dolor delectus illum repellendus praesentium reiciendis dolorem natus. Explicabo dolorem nulla iure, doloremque facere assumenda laudantium! Porro eius in excepturi sed recusandae, architecto obcaecati, incidunt ea adipisci unde itaque, fugiat repellendus deleniti nemo doloremque odio a iure dignissimos quos? Numquam maxime commodi aut ab a tempora alias nobis mollitia est earum tenetur, quae distinctio accusamus, unde velit quas sit, nostrum dicta? Eius earum dignissimos velit iste non dolorem dicta minima reiciendis, ea aperiam libero voluptate, laudantium nesciunt, suscipit voluptatibus expedita eos et impedit itaque incidunt aliquid. Eos maxime earum at fugiat magnam consequatur veniam dolor consectetur qui a labore eaque tempora incidunt itaque accusamus similique voluptatum laboriosam ratione sit, harum fuga. Unde doloremque quis vero earum minus autem numquam eos mollitia, dignissimos vitae officia similique magni accusamus sint rerum, harum maxime. Laudantium veritatis voluptatibus officia ipsa quia in. Asperiores, omnis.
-                </h1>
+                <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi explicabo odit natus facere
+                    provident earum, similique placeat reprehenderit in. Architecto quam, corporis unde quasi
+                    voluptatibus libero consequatur inventore officia pariatur. Voluptatum dolores ad cum eius. Sunt
+                    excepturi dolor ex? Nam a alias iure consectetur amet sint veritatis itaque eum enim! Et expedita
+                    tenetur cumque! Laborum expedita voluptatibus praesentium commodi ducimus numquam perferendis
+                    reiciendis repellendus, officia quo et ad ut vel similique, neque, suscipit laboriosam molestias
+                    porro enim id eaque hic at maiores. Dolorum vel veritatis esse debitis inventore fugit dolor
+                    deserunt sit animi earum unde ipsa, quisquam maiores modi voluptatem blanditiis aliquam mollitia ut
+                    libero. Voluptatum cumque laborum earum explicabo architecto deserunt labore alias sint eum ea
+                    numquam quos nesciunt necessitatibus, id, omnis adipisci? Aperiam omnis eveniet assumenda recusandae
+                    id natus fugit vitae consectetur eos, at iste tempora laboriosam unde et optio blanditiis pariatur
+                    quidem asperiores explicabo ad soluta nisi ab! Similique minus, nemo dolorum rerum nam dolores quos
+                    numquam vitae magnam deserunt commodi qui enim fugit labore. Laudantium quibusdam fugiat aliquid
+                    magni inventore? Eum voluptatum laborum quis doloremque? Laudantium reiciendis tempora asperiores
+                    placeat, qui quam, dolorum commodi animi maiores eum nesciunt est perspiciatis nobis incidunt quos
+                    voluptas aliquid dolore mollitia delectus, blanditiis adipisci modi unde ex. Adipisci labore quod
+                    velit illum. Eligendi animi reiciendis qui vel nulla maxime amet mollitia. Vitae perferendis
+                    officiis omnis eveniet sit sint ex totam cum eaque id incidunt voluptatem aut deleniti a, est
+                    laborum molestias optio repellat at. Itaque iste minima voluptatibus exercitationem tenetur
+                    doloribus harum iure et minus at culpa facere voluptates cupiditate, fugit, facilis, aperiam
+                    similique dolore numquam ullam velit nam vel reiciendis. Labore maxime in natus hic? Corrupti velit
+                    quidem possimus cumque, id in aut dicta, dolore accusantium, eius culpa est quis odio asperiores
+                    delectus! Cum voluptatem excepturi consequatur soluta dignissimos laboriosam ex asperiores,
+                    doloremque, suscipit veniam iusto ratione, quidem ut iure labore voluptate corporis doloribus
+                    officia explicabo eius molestias similique? Dolore obcaecati deserunt officiis. Ut expedita rem
+                    ipsam voluptatum dolore error vero! Nam, laborum? Voluptates ipsam harum officia, quos veniam, iure
+                    eligendi cumque minima sunt reprehenderit, perspiciatis fugiat vero. Ratione, cupiditate temporibus
+                    accusantium dignissimos dolor asperiores in quidem. Reprehenderit enim amet ad tempore consequatur
+                    quia numquam exercitationem obcaecati odio atque quibusdam, fugit nihil expedita porro. Tempora
+                    quidem quas non qui rerum libero dolorum assumenda necessitatibus earum praesentium inventore
+                    suscipit quia ipsum id temporibus ad nihil velit laudantium facilis, quaerat dolores? Culpa
+                    repudiandae enim distinctio tempora repellendus? Blanditiis aliquid non magni ut eligendi quae
+                    asperiores ullam rerum voluptate inventore at porro debitis dignissimos quo quia, delectus quaerat
+                    maiores dolore consectetur laborum culpa corrupti dicta molestias modi. Veniam, cupiditate aperiam
+                    magni minima quia non eum quis! Odit, aliquam? Hic nam nihil sed veniam, molestiae deserunt
+                    perspiciatis cum minima, libero beatae veritatis culpa, voluptate est. Pariatur provident eligendi
+                    nulla, illo blanditiis cupiditate dolorum placeat. Perspiciatis dicta vero expedita placeat? Tempora
+                    illum iusto maxime voluptas cupiditate sunt aliquid consectetur placeat ratione ea animi reiciendis
+                    non iste quod, nam consequuntur, iure blanditiis similique commodi nobis quos eveniet in!
+                    Consequatur animi sequi dolor quae consequuntur eum harum repellat aliquam qui fugit? Ipsa est alias
+                    nam modi animi quidem nemo sed, suscipit molestiae quisquam, praesentium sit adipisci provident fuga
+                    eveniet id, eius ducimus? Fugiat consectetur iure ex praesentium a, sint numquam, totam nisi autem
+                    quae iste culpa placeat quam vero ipsum maxime non ratione, consequuntur quis. Suscipit error soluta
+                    quibusdam natus eos tenetur corporis iure, quam dolorum fuga nobis, atque, ea consequatur quae
+                    magnam modi adipisci nisi totam expedita illum. Nostrum laudantium porro nam consequuntur provident
+                    magni veritatis corrupti beatae aspernatur cupiditate aut eius libero harum autem quam soluta
+                    recusandae, officia accusantium quibusdam odio quaerat natus possimus dolores! Iusto, explicabo
+                    ratione ex optio esse aut quae veniam, ipsum ea voluptatem, aspernatur amet officiis! Tempore
+                    praesentium sunt, quisquam eius alias perspiciatis recusandae illum provident? In quae veniam ad
+                    placeat! Nulla neque possimus facere nemo vero adipisci esse voluptates. Sint dolore, obcaecati
+                    vitae et nesciunt repellendus voluptatum provident dolores placeat voluptate asperiores beatae ipsum
+                    laborum, quibusdam itaque expedita? Dolorum dolore illum nam fugiat unde tempora nulla quae
+                    molestias alias soluta! Quae minima vero culpa reiciendis quod in ab labore quam saepe aspernatur
+                    odit, fuga, ullam explicabo consectetur, similique expedita repellat? Mollitia vel deserunt earum
+                    sapiente officia saepe voluptate. Eveniet quaerat laudantium ipsum, distinctio, inventore eos sunt
+                    repellat corporis maxime similique numquam dolorum sit illo amet. Asperiores blanditiis neque quam
+                    sequi aliquam ad, eos corporis, laudantium aliquid aspernatur molestiae explicabo ab consequuntur
+                    beatae veniam recusandae dolore assumenda voluptatem quas perferendis magni! Quasi autem officia sed
+                    possimus repellat consequuntur? Voluptate impedit tempore, dolores nostrum, mollitia quae soluta,
+                    obcaecati a incidunt esse eveniet nemo distinctio recusandae. Exercitationem, iure. Voluptate
+                    quaerat nam dolor necessitatibus atque quidem soluta magni, saepe sed et consectetur minus eveniet
+                    asperiores accusantium adipisci voluptatibus. Maiores iure nulla eum deleniti veritatis magnam,
+                    voluptatibus neque deserunt? Corrupti, maiores quam ullam quod voluptatem laboriosam blanditiis
+                    nulla. Velit ut ullam blanditiis ad reiciendis beatae deserunt veniam obcaecati eligendi accusamus
+                    aliquam modi cumque adipisci, odio a mollitia quos omnis esse culpa, dolores quibusdam. Impedit
+                    exercitationem quibusdam nulla rerum eius iure enim, illum minus sint dolor ipsum tempora saepe
+                    facere, velit laudantium incidunt architecto error id. Illum quod exercitationem ipsum cumque
+                    excepturi optio reprehenderit! Commodi vero sint quam odio hic ut obcaecati, est aspernatur. Eaque
+                    asperiores fugiat est odit maxime iusto temporibus dolores. Exercitationem, deserunt ipsum quisquam
+                    optio odio labore placeat a perspiciatis earum quia. Exercitationem atque aperiam non, ab ex neque
+                    aut soluta porro nesciunt reiciendis inventore quidem nemo tempore dolorum vitae. Iusto error eum
+                    eos, ipsam nisi quos molestias harum, fugiat facilis ad, enim maxime! Soluta earum cum debitis quasi
+                    nostrum adipisci quas nam? Voluptatem ducimus qui id facere doloribus eum, animi eaque nulla
+                    sapiente laborum obcaecati quam autem omnis voluptas consequatur iusto provident delectus porro ipsa
+                    fugit asperiores veritatis similique sequi. Optio eligendi corporis unde officia, animi delectus,
+                    sapiente doloremque minus inventore ea asperiores corrupti quod ipsa laborum, illo adipisci quis nam
+                    dolor soluta quaerat. Qui ipsam deserunt soluta aperiam officiis modi?</h1>
             </div>
+        </div>
     </div>
 
     <script src="dashboard-core.js"></script>
 </body>
+
 </html>

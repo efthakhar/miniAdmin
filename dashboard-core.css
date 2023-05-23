@@ -1,8 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@300;400;600;700&family=Jost:wght@200;400;500;600;700;800;900&family=Lato:wght@300;400;700;900&family=Nunito:wght@400;600;900&family=Poppins:wght@100;200;300;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 *,*::after,*::before{margin: 0;padding: 0;box-sizing: border-box;}
 
 html{
     font-size: 63.5%;
-    font-family: Roboto,sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Works on Firefox */
@@ -29,38 +32,37 @@ border-radius: 20px;
 
 a{text-decoration: none;}
 
-/* UTILITIES */
-.h--1{font-size: 2.4rem;}
-
 
 /* Admin Sidebar */
 
 .admin-page{
     display: flex;  
     height: 100vh; 
+    position: relative;
 }
 
 .admin-sidebar{
-   
-    box-shadow: 4px 4px 5px grey;
-    width: 220px;
+    width: 230px;
     height: 100vh;
-    flex: 0 0 200px;
-    overflow-y: scroll;
+    flex: 0 0 230px;
     user-select: none;
-    border-right: 2.5px solid #0B5ED7;
-    background-color: white;
+    border-right: 1px solid #dfdfdf;
+    background-color: #FFFFFF;
+    overflow-y: auto;
+    height: 100vh;  
+    transition: all .3s;
+    z-index: 100;
 }
 
-.admin-sidebar-hide{ display: none !important;}
-
-@media screen and (max-width: 600px) {
-    .admin-sidebar{ display: none; }
-    .admin-sidebar-hide{ display: block !important;}
+.admin-sidebar-hidden{ 
+    width: 0px;
+    height: 100vh;
+    flex: 0 0 0px;
+    transition: all .3s;
 }
-@media screen and (max-width: 300px) {
-    .admin-sidebar{  width: 100vw; flex: 0 0 100vw}
-}    
+
+
+
 .admin-sibar__logo{
     background-color: rgb(255, 255, 255);
     position: sticky;
@@ -70,74 +72,84 @@ a{text-decoration: none;}
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 1rem;
-   
-}
-.admin-sibar__logo .h--1{
-    color: #0B5ED7;
+    padding: 1.6rem 1rem;
+    border-bottom: 1px solid #dfdfdf;
+    z-index: 100;
 }
 
+.admin-sibar__logo .logo-text{
+    color: #313435;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.admin-sidebar__links{
+    padding-top: 2rem;
+}
 .admin-sidebar__link_item{
-    cursor: pointer;
-    margin: 4px 0; 
-    color: #0B5ED7;
-    text-transform: uppercase;
+    cursor: pointer; 
+    position: relative;
+}
+
+.sidebar__link{ 
+    text-transform: uppercase; 
+    display: flex;
+    align-items: center;
+    padding: .8rem 1.5rem;
+    font-size: 1.5rem;
+    color: #72777a;
+    transition: all .2s;
+    font-weight: 500;
    
 }
-.sidebar__link{
-    
-    display: block;
-    padding: .8rem 1.5rem;
-    font-size: 1.4rem;
-    color: #0A58CA;
-    transition: all .2s;
-    font-weight: 400;
-    box-shadow: 1px 1px 16px #ddd;
-    margin: 2px 0;
-}
-.sidebar__sublink{
 
-    padding: .3rem 1.5rem;
-    font-size: 1.4rem;
-    color: #0A58CA;
-    transition: all .2s;
+
+.sidebar__link.active,.sidebar__link:hover{
+    color:#0084ff;
+    background-color: #E5F2FF;
+}
+
+.sidebar__link_icon svg{ 
+    width: 24px;
+    height: 24px;
+    fill:currentColor;
+}
+.sidebar__link_icon { margin-right: 8px;}
+
+
+.sidebar__sublink{
+    text-transform: capitalize; 
     display: block;
-    font-weight: 400;
-    border-top: 1px solid #0A58CA;
-    background-color: whitesmoke;      
+    padding: .6rem 1rem .6rem 4.5rem;
+    font-size: 1.5rem;
+    color: #72777a;
+    transition: all .2s;
+    font-weight: 500;    
 }
-.sidebar__sublink:last-child{border-bottom: 1px solid #0A58CA;}
-.admin-sidebar__link_item .sidebar__link:hover{
-   color:white;
-   background-color: #0C5FD7;
-}
-.sidebar__link.active{
-   color:white !important;
-   background-color: #0C5FD7;
-}
+
+.sidebar__sublink.active,.sidebar__sublink:hover{ color:#0084ff;}
+
+
+
 .sidebar__link_sublinks{
-    display: none;
-    background-color:rgb(255, 255, 255);
-    padding: 10px;
+    max-height: 0;
+    transition: max-height 0.22s ease-out;
+    overflow: hidden;
+    
+
 }
-.show_sublinks{
-    display: block !important;
+
+.sidebar__link_sublinks.show_sublinks{
+    max-height:  1000px;
+    transition: max-height 0.5s ease-in;
 }
-.sidebar__sublink:hover{
-    color:white ;
-    background-color: #0C5FD7;
-}
-.sidebar__sublink.active{
-    color:white !important;
-    background-color: #0C5FD7;
- }
 
 
 /* ADMIN MAIN AREA */
 .admin-main{
     width: auto;
     flex: 1 1 auto;
-    /* background-color: black; */
     height: 100vh;
     overflow-y: scroll;
 }
@@ -145,9 +157,9 @@ a{text-decoration: none;}
     display: flex;
     align-items: center;
     padding: 5px 16px;
-    min-height: 50px;
+    min-height: 58px;
     background-color: rgb(255, 255, 255);
-    box-shadow: 2px 4px 7px grey;
+    border-bottom: 1px solid #dfdfdf;
     position: sticky;
     top:0%;
 }
@@ -159,33 +171,37 @@ a{text-decoration: none;}
     width: 30px!important;
     height: 30px!important;
     cursor: pointer;
-    fill: #0C5FD7;
+    fill: #313435;
     user-select: none;
     transition: all .2s;
    
 }
-.menu-icon svg:hover{
-    width: 34px!important;
-    height: 34px!important;
-    fill: #0C5FD7;
-}
-.close-sidebar svg{
+.hide-small-device-sidebar svg{
     display: none;
-    width: 15px!important;
-    height: 15px!important;
+    width: 30px !important; 
+    height: 30px !important;
+    margin-left: 30px;
     cursor: pointer;
-    position: absolute;
-    right: 2px;
-    top:2px;
-    fill: #0C5FD7;
-    user-select: none;
-    transition: all .2s;
+    fill:#0084ff;
 }
-@media screen and (max-width: 300px) {
-    .close-sidebar svg{ display: block;}
-}  
 /* ADMIN CONTENT */
 
 .admin-content{
     padding: 20px;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .admin-sidebar{ 
+        position: absolute;
+        width: 230px;
+        left:-100%;
+    }
+    .admin-sidebar-hidden{ 
+        position: absolute;
+        width: 230px;
+        left:0%;
+    }
+    .hide-small-device-sidebar svg{display: block;  }
 }

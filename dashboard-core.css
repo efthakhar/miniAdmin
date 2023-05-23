@@ -83,6 +83,10 @@ a {
     z-index: 100;
 }
 
+.admin-sibar__logo_icon svg{
+    width: 30px;
+    height: 30px;
+}
 .admin-sibar__logo .logo-text {
     color: #313435;
     font-size: 20px;

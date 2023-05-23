@@ -4,7 +4,7 @@
 // sidebar links sublinks toggle functionality
 let links = document.querySelectorAll('.admin-sidebar__link_item');
 
-for(i=0;i<links.length;i++){
+for(let i=0;i<links.length;i++){
 
     links[i].addEventListener('click',(e)=>{
         
